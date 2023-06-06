@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "BibleApp",
-    "slug": "BibleApp",
+    "slug": "Holy Bible",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
