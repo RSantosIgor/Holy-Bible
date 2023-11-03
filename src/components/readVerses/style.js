@@ -7,16 +7,9 @@ const styles = StyleSheet.create({
         fontFamily: 'poppins, sans-serif',
         color: '#282828',
     },
-    title: {
-        marginTop: 10,
-        fontSize: 20,
-        fontWeight: 'bold',
-        alignSelf: "center"
-    },
-    scrollRead: {
-        flex: 0.6,
-        marginBottom: '20%'
+    marginVertical: {
+        marginVertical: 5
     }
-})
+});
 
 export default styles;

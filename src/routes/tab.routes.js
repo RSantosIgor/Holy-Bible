@@ -7,7 +7,7 @@ import Favorites from '../pages/Favorites';
 import Settings from '../pages/Settings';
 
 const Tab = createBottomTabNavigator();
-
+const active_color = '#E5E5CB';
 export default function TabRoutes () {
     return (
         <Tab.Navigator
@@ -16,7 +16,7 @@ export default function TabRoutes () {
                 tabBarShowLabel: false,
                 tabBarStyle: {
                     position: 'absolute',
-                    backgroundColor: '#172616',
+                    backgroundColor: '#16151B', //26252F
                     borderTopWidth: 0,
                     bottom: 14,
                     left: 14,
@@ -33,7 +33,7 @@ export default function TabRoutes () {
                 headerShown: false,
                 tabBarIcon: (({color, size, focused}) => {
                     if(focused) 
-                        return <Ionicons name="home" size={size} color={color}/>
+                        return <Ionicons name="home" size={size} color={active_color}/>
                     
                     return <Ionicons name="home-outline" size={size} color={color}/>
                 })
@@ -47,7 +47,7 @@ export default function TabRoutes () {
                 headerShown: false,
                 tabBarIcon: (({color, size, focused}) => {
                     if(focused) 
-                        return <Ionicons name="search" size={size} color={color}/>
+                        return <Ionicons name="search" size={size} color={active_color}/>
                     
                     return <Ionicons name="search-outline" size={size} color={color}/>
                 })
@@ -61,9 +61,9 @@ export default function TabRoutes () {
                 headerShown: false,
                 tabBarIcon: (({color, size, focused}) => {
                     if(focused) 
-                        return <Ionicons name="home" size={size} color={color}/>
+                        return <Ionicons name="bookmark" size={size} color={active_color}/>
                     
-                    return <Ionicons name="home-outline" size={size} color={color}/>
+                    return <Ionicons name="bookmark-outline" size={size} color={color}/>
                 })
             }}
             />
@@ -75,7 +75,7 @@ export default function TabRoutes () {
                 headerShown: false,
                 tabBarIcon: (({color, size, focused}) => {
                     if(focused) 
-                        return <Ionicons name="settings" size={size} color={color}/>
+                        return <Ionicons name="settings" size={size} color={active_color}/>
                     
                     return <Ionicons name="settings-outline" size={size} color={color}/>
                 })
