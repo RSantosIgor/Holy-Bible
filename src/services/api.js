@@ -1,8 +1,9 @@
 import axios from 'axios'
-import 'dotenv/config'
+import { TOKEN_API } from "@env"
+
 
 const baseURL = 'https://www.abibliadigital.com.br/api/'
-const token = process.env.TOKEN_API;
+const token = TOKEN_API;
 const client = axios.create({
   baseURL: baseURL,
   timeout: 10000,
